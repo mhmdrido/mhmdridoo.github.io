@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <!-- Bootstrap CSS 5.3.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .navbar {
+            background-color: #430a43;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        #header {
+            background: #550255;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        #header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        #about, #projects, #contact {
+            padding: 60px 0;
+        }
+        .project-card {
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Muhamad Ridho</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header Section -->
+<header id="header">
+    <div class="container">
+      <img data-aos="fade-up"
+     data-aos-duration="600" src="main.jpg" alt="" class="object-fit-cover rounded-circle mb-4 shadow" style="width: 130px; height: 130px">
+        <h1  data-aos="fade-up"
+     data-aos-duration="800" >Hi, I'm Muhamad Ridho</h1>
+        <p data-aos="fade-up"
+     data-aos-duration="1000" >Accounting Studens | Designer</p>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <h2  data-aos="fade-up"
+     data-aos-duration="600" class="text-center">About Me</h2>
+        <p data-aos="fade-up"
+     data-aos-duration="800" class="text-center">Hai! Nama saya Muhamad Ridho, seorang pelajar yang sedang menekuni bidang akuntansi. Saya tertarik pada bagaimana angka dan data dapat memberikan gambaran yang jelas tentang kondisi finansial suatu bisnis atau organisasi. Selama studi saya, saya telah mempelajari dasar-dasar akuntansi seperti pembuatan jurnal, penyusunan neraca, analisis laporan keuangan, hingga manajemen pajak.</p>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h2 data-aos="fade-up"
+     data-aos-duration="200" class="text-center">Gallery</h2>
+        <div class="row mt-4">
+            <div data-aos="fade-up"
+     data-aos-duration="400" class="col-md-4 mb-3">
+                <div class="card project-card">
+                    <img src="1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">No one but ourselves can free our minds</p>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up"
+     data-aos-duration="600" class="col-md-4 mb-3">
+                <div class="card project-card">
+                    <img src="2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">living young and wild and free</p>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up"
+     data-aos-duration="800" class="col-md-4 mb-3">
+                <div class="card project-card">
+                    <img src="3.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">The beginning is usually scary, and the ending is usually sad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2 class="text-center">Contact</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer Section -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <p>Follow me on</p>
+        <div class="d-flex justify-content-center">
+            <a href="https://www.instagram.com/ridoo_0108p/profilecard/?igsh=Y3JieTE1dzQ2Zndi" target="_blank" class="text-white mx-3" aria-label="Instagram">
+                <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+            </a>
+        </div>
+        <p class="mt-3">&copy; 2024 ridho. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
